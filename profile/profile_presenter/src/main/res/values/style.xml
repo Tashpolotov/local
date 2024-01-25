@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    
+    <style name="BottomSheetDialogTheme" parent="Theme.Design.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+
+    <style name="SwitchColor" parent="Theme.AppCompat.Light">
+        <!-- active thumb color -->
+        <item name="android:thumbTint">#FF9600</item>
+        <item name="trackColorInactive">@color/red</item>
+        <!-- inactive thumb color -->
+        <item name="colorSwitchThumbNormal">#FF9600</item>
+
+        <!-- active track color (30% transparency) -->
+        <item name="colorControlActivated">#FF9600</item>
+        <item name="trackColorActive">#1CA1BF</item>
+
+
+    </style>
+
+
+    <style name="CustomRadioTheme" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:colorControlNormal">#7a7a7a</item>
+        <item name="android:colorControlActivated">#FF9800</item>
+    </style>
+
+
+</resources>

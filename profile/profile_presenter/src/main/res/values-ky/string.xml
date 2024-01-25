@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello_blank_fragment">Привет, пустой фрагмент</string>
+    <string name="name_user">Сергей Ивлеев</string>
+    <string name="rank_user">Тилкелеуш пешекчи</string>
+    <string name="rank">Ранг</string>
+    <string name="next_rank">(Кийинки ранг кайсысы)</string>
+    <string name="complete_test">Тесттерди тамамлау</string>
+    <string name="all_ball">Жалпы баллдар</string>
+    <string name="complete_lessob">Уроктарды тамамлау</string>
+    <string name="log_out">Аккаунттан чыгуу</string>
+    <string name="delete_account">Аккаунтты жок кылуу</string>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorError">#B3261E</color>
+    <color name="colorPrimary">#175CD3</color>
+    <color name="colorPrimaryVariant">#0048AD</color>
+    <color name="colorSecondary">#6750A4</color>
+    <color name="colorActiveQuestion">#217DFF</color>
+    <color name="colorInactiveQuestion">#7DB3FF</color>
+    <color name="Indigo_700">#3538CD</color>
+    <color name="colorSuccessfully">#0FDD55</color>
+    <color name="black">#FF000000</color>
+    <color name="blue_600">#1570EF</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="logo_bg">#D9D9D9</color>
+    <color name="thirdPlaceLevel">#8098F9</color>
+    <color name="firstPlaceLevel">#444CE7</color>
+    <color name="secondPlaceLevel">#1570EF</color>
+    <color name="purple_500">#7A5AF8</color>
+    <color name="purple_800">#1849A9</color>
+    <color name="background_tint_rating_item">#F4F9FF</color>
+    <color name="border_color_rating_item">#7A7C7F</color>
+    <color name="desc_color">#7B8AAA</color>
+    <color name="title_color">#0B1956</color>
+    <color name="forget_password">#5884E7</color>
+    <color name="toolbar_text">#763F00</color>
+    <color name="dark_blue">#0B1956</color>
+    <color name="profile_btn_color">#D2E8FF</color>
+    <color name="gray">#E2E2E2</color>
+    <color name="bottom_navigation_border_color">#1CA1BF</color>
+    <color name="bottom_navigation_selected_background_color">#F0FDFF</color>
+    <color name="bottom_navigation_text_color">#1CA1BF</color>
+
+
+
+
+</resources>

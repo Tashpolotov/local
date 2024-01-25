@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backround"
+    tools:context=".ui.fragment.ProfileFragment">
+
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:indeterminateTint="@color/black"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/img_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/ic_setting"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/card_view"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/logo_bg"
+            app:cardCornerRadius="100dp">
+
+            <ImageView
+                android:id="@+id/iv_logo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="180dp"
+        android:src="@drawable/ic_camera"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_name_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/name_user"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card_view" />
+
+    <ImageView
+        android:id="@+id/img_pencil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/ic_pencil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card_view" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cosnt_statistic_rank"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_name_user"
+            style="@style/constContainer">
+
+            <ImageView
+                android:id="@+id/img_shield"
+                android:src="@drawable/ic_shield"
+                style="@style/imageView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_rank_user"
+                android:text="@string/rank_user"
+                style="@style/tvRank"
+                app:layout_constraintStart_toEndOf="@id/img_shield"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_rank"
+                android:text="@string/rank"
+                android:textSize="12sp"
+                style="@style/tv_small_rank"
+                app:layout_constraintStart_toStartOf="@id/tv_rank_user"
+                app:layout_constraintTop_toBottomOf="@id/tv_rank_user" />
+
+            <SeekBar
+                android:id="@+id/seek_bar"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginHorizontal="18dp"
+                android:layout_marginTop="10dp"
+                android:progressDrawable="@drawable/custom_seek_bar"
+                android:thumb="@android:color/transparent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_rank" />
+
+            <TextView
+                android:id="@+id/tv_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="20/120"
+                android:textColor="@color/tv_score_color"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@id/img_shield"
+                app:layout_constraintTop_toBottomOf="@id/seek_bar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="10dp"/>
+
+
+            <TextView
+                android:id="@+id/tv_next_rank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/next_rank"
+                android:textColor="@color/tv_score_color"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@id/tv_score"
+                app:layout_constraintTop_toTopOf="@id/tv_score" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/const_statistic_test"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cosnt_statistic_rank"
+            style="@style/constContainer"
+            >
+
+            <ImageView
+                android:id="@+id/img_list_check"
+                style="@style/imageView"
+                android:src="@drawable/ic_list_check"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_ball_test"
+                android:text="9999999"
+                style="@style/tvRank"
+                app:layout_constraintStart_toEndOf="@id/img_list_check"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_complete_test"
+                android:text="@string/complete_test"
+                style="@style/tv_small_rank"
+                app:layout_constraintStart_toStartOf="@id/tv_ball_test"
+                app:layout_constraintTop_toBottomOf="@id/tv_ball_test"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="10dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/const_statistic_all_ball"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/const_statistic_test"
+            style="@style/constContainer"
+            >
+
+            <ImageView
+                android:id="@+id/img_star"
+                style="@style/imageView"
+                android:src="@drawable/ic_star"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_all_ball"
+                style="@style/tvRank"
+                android:text="9999999"
+                app:layout_constraintStart_toEndOf="@id/img_star"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+
+                style="@style/tv_small_rank"
+                android:text="@string/all_ball"
+                android:textColor="@color/desc_color"
+                app:layout_constraintStart_toStartOf="@id/tv_all_ball"
+                app:layout_constraintTop_toBottomOf="@id/tv_all_ball"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="10dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/const_statistic_lesson"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/const_statistic_all_ball"
+            style="@style/constContainer"
+        >
+
+            <ImageView
+                android:id="@+id/img_ok_check"
+                style="@style/imageView"
+                android:src="@drawable/ic_ok_check"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_lesson_ball"
+                android:text="9999999"
+                style="@style/tvRank"
+                app:layout_constraintStart_toEndOf="@id/img_ok_check"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                style="@style/tv_small_rank"
+                android:text="@string/complete_lessob"
+                android:textColor="@color/desc_color"
+                app:layout_constraintStart_toStartOf="@id/tv_lesson_ball"
+                app:layout_constraintTop_toBottomOf="@id/tv_lesson_ball"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="10dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/tv_delete_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/delete_account"
+        android:textColor="@color/red"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/const_statistic_lesson" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

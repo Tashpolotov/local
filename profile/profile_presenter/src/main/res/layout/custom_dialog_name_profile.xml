@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        app:cardCornerRadius="20dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/switch_thumb_color"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="Введите ваше имя"
+                android:layout_gravity="start"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="20dp"
+                android:textColor="@color/white"/>
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_edit_text"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="10dp"
+                />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                >
+
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:text="ОТМЕНА"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:textColor="@color/btn_color"
+                    app:cornerRadius="10dp"
+                    android:textAllCaps="false"
+                    android:textSize="16sp"/>
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_yes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/btn_color"
+                    android:text="ГОТОВО"
+                    app:layout_constraintTop_toBottomOf="@id/btn_no"
+                    app:layout_constraintStart_toStartOf="@id/btn_no"
+                    app:layout_constraintEnd_toEndOf="@id/btn_no"
+                    app:cornerRadius="10dp"
+                    android:visibility="invisible"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"/>
+
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_yes_false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/gray"
+                    android:text="ГОТОВО"
+                    app:layout_constraintTop_toBottomOf="@id/btn_no"
+                    app:layout_constraintStart_toStartOf="@id/btn_no"
+                    app:layout_constraintEnd_toEndOf="@id/btn_no"
+                    app:cornerRadius="10dp"
+                    android:visibility="visible"
+                    android:textColor="@color/gray_black"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="gray">#E2E2E2</color>
+    <color name="black_blue">#4097A7</color>
+    <color name="pale_blue">#7BA2AA</color>
+    <color name="white">#FFFFFF</color>
+    <color name="btn_color">#FF9600</color>
+    <color name="gr">#CDCDCD</color>
+    <color name="dots_color">#1CA1BF</color>
+    <color name="backround">#FDFDFF</color>
+
+    <color name="gekks_text_color">#A6A6A6</color>
+
+    <color name="onboarding_background">#F0FDFF</color>
+</resources>

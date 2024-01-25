@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/shape_bottom_sheep">
+
+
+    <View
+        android:id="@+id/view_close"
+        android:layout_width="46dp"
+        android:layout_height="6dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/shape_for_view"
+        android:layout_marginTop="10dp"
+        app:layout_constraintCircleRadius="10dp"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/view_close"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:text="Настройки"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_setting"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/gr"
+        android:layout_marginTop="8dp"
+        app:layout_constraintCircleRadius="10dp"
+
+        />
+
+    <ImageView
+        android:id="@+id/img_no_sound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/view1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/ic_yes_sound"
+        android:layout_marginTop="16dp"
+        android:visibility="invisible"
+        android:layout_marginStart="16dp"
+
+        />
+
+    <ImageView
+        android:id="@+id/img_yes_sound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/view1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/ic_sound"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:visibility="visible"
+        />
+
+    <TextView
+        android:id="@+id/tv_sound_effect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/img_yes_sound"
+        app:layout_constraintStart_toEndOf="@id/img_yes_sound"
+        android:text="Звуковые эффекты"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginStart="12dp"
+        />
+
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchcompat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/img_yes_sound"
+        app:layout_constraintBottom_toBottomOf="@id/img_yes_sound"
+        android:layout_marginEnd="16dp"
+        android:checked="false"
+        android:theme="@style/SwitchColor"
+
+        />
+
+
+    <ImageView
+        android:id="@+id/img_planet_lang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/img_yes_sound"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/ic_planet_lang"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_lang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/img_planet_lang"
+        app:layout_constraintStart_toEndOf="@id/img_planet_lang"
+        android:text="Язык"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginStart="12dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_ru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/img_planet_lang"
+        app:layout_constraintStart_toStartOf="@id/img_planet_lang"
+        android:text="Русский"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        />
+
+
+    <RadioButton
+        android:id="@+id/radio_button_ru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_ru"
+        app:layout_constraintBottom_toBottomOf="@id/tv_ru"
+        android:layout_marginEnd="16dp"
+
+        />
+
+
+
+    <TextView
+        android:id="@+id/tv_kg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_ru"
+        app:layout_constraintStart_toStartOf="@id/tv_ru"
+        android:text="Кыргызский"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <RadioButton
+        android:id="@+id/radio_button_kg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_kg"
+        app:layout_constraintBottom_toBottomOf="@id/tv_kg"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/switch_track_color"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

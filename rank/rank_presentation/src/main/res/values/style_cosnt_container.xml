@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <style name="constContainer">
+        
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginHorizontal">20dp</item>
+        <item name="android:background">@drawable/linear_shape_profile</item>
+    </style>
+
+
+    <style name="imageView">
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_marginTop">24dp</item>
+    </style>
+
+
+    <style name="tvRank">
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textColor">@color/btn_color</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="tv_small_rank">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/desc_color</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_marginTop">6dp</item>
+    </style>
+    
+</resources>

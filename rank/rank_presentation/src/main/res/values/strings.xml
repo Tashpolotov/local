@@ -1,0 +1,15 @@
+<resources>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="name_user">Ивлеев Сергей</string>
+    <string name="rank_user">Пешеходный путник</string>
+    <string name="rank">Ранг</string>
+    <string name="next_rank">(След ранг вот такой хуевый)</string>
+    <string name="complete_test">Пройдено тестов</string>
+    <string name="all_ball">Всего баллов</string>
+    <string name="complete_lessob">Пройдено уроков</string>
+    <string name="log_out">Выйти с аккаунта</string>
+    <string name="delete_account">Удалить аккаунт</string>
+    <string name="camera">Камера</string>
+    <string name="gallery">Галерея</string>
+</resources>
